@@ -9,8 +9,8 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
-    private static final String[] LOGINS = {"admin"};
-    private static final String[] PASSWORDS = {"password123"};
+    private static final String[] LOGINS = {"a"};
+    private static final String[] PASSWORDS = {"1"};
 
     private EditText usernameEditText;
     private EditText passwordEditText;

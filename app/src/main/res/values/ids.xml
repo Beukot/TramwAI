@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="starIcon" type="id" />
+    <item name="announcementTitle" type="id" />
+    <item name="announcementDescription" type="id" />
+    <item name="typeLabel" type="id" />
+</resources>
