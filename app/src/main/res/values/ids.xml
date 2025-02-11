@@ -4,4 +4,7 @@
     <item name="announcementTitle" type="id" />
     <item name="announcementDescription" type="id" />
     <item name="typeLabel" type="id" />
+    <item name="titleEditText" type="id" />
+    <item name="saveButton" type="id" />
+    <item name="descriptionEditText" type="id" />
 </resources>
