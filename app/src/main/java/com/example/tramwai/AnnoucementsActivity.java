@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import java.util.ArrayList;
 
-public class AnnouncementsActivity extends AppCompatActivity {
+public class AnnoucementsActivity extends AppCompatActivity {
     private ListView announcementsList;
     private ArrayList<Announcement> announcements;
     private Button addAnnouncementButton;
@@ -16,7 +16,7 @@ public class AnnouncementsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_announcements);
+        setContentView(R.layout.activity_annoucements);
 
         announcementsList = findViewById(R.id.announcementsList);
         addAnnouncementButton = findViewById(R.id.addAnnouncementButton);
@@ -34,7 +34,7 @@ public class AnnouncementsActivity extends AppCompatActivity {
 
         // Handle item clicks
         announcementsList.setOnItemClickListener((parent, view, position, id) -> {
-            Intent intent = new Intent(AnnouncementsActivity.this, EditAnnouncementActivity.class);
+            Intent intent = new Intent(AnnoucementsActivity.this, EditAnnouncementActivity.class);
             intent.putExtra("title", announcements.get(position).getTitle());
             intent.putExtra("description", announcements.get(position).getDescription());
             intent.putExtra("position", position);
@@ -42,7 +42,7 @@ public class AnnouncementsActivity extends AppCompatActivity {
         });
 
         addAnnouncementButton.setOnClickListener(v -> {
-            Intent intent = new Intent(AnnouncementsActivity.this, EditAnnouncementActivity.class);
+            Intent intent = new Intent(AnnoucementsActivity.this, EditAnnouncementActivity.class);
             startActivityForResult(intent, EDIT_ANNOUNCEMENT_REQUEST);
         });
     }
